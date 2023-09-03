@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Love BTS</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="icon" type="image/png" href="./img/favicon_512x512.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="logo"><a href="#home">Love BTS</a></div>
+            <!-- <div class="logo-p"><a href="#home"><img src="./images/portfolio.png" id="logo-p-img"></a></div> -->
+            <!-- Hamburger Menu -->
+            <div class="nav_toggle" id="mobile_menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav">
+                <a href="#MusicVideo" id="MV-ham-menu">MV</a>
+                <a href="#About-us" id="ABOUT-ham-menu">About</a>
+                <a href="#contact-us" id="CONTACT-ham-menu">Contact</a>
+            </div>
+        </header>
+
+        <!-- Banner
+            <div id="home" class="banner">
+            <h1>BTS</h1>
+            <h2>I Purple You</h2>
+        </div>-->
+
+        <!-- Photo Slideshow -->
+        <div id="home" class="slideshow-container">
+            <div class="mySlide fade">
+                <img src="./img/banner_1p.png" style="width:100%">
+            </div>
+            <div class="mySlide fade">
+                <img src="./img/banner_2p.png" style="width:100%">
+            </div>
+            <div class="mySlide fade">
+                <img src="./img/banner_3p.png" style="width:100%">
+            </div>
+            <!-- Previous & Next Buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- MV -->
+        <div id="MusicVideo" class="MV">
+            <br>
+            <br>
+            <br>
+            <h1>Music Video</h1>
+        </div>
+
+        <div class="video-container">
+            <div class="video-info">
+                <h2>First MV's Title</h2>
+                <p>First MV's description</p>
+            </div>
+            <div class="video-youtube">
+                <iframe width="660" height="415" src="https://www.youtube.com/embed/D2xmlzMOsmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-thumbnails">
+                <img src="./img/thumbnail-1.png" data-video-id="D2xmlzMOsmM" alt="MV 1 Title" data-description="MV 1 description">
+                <img src="./img/thumbnail-2.png" data-video-id="x5ZeAfz4G3s" alt="MV 2 Title" data-description="MV 2 description">
+                <img src="./img/thumbnail-3.png" data-video-id="J8fQMq4T8Yg" alt="MV 3 Title" data-description="MV 3 description">
+            </div>
+        </div>
+
+        <div class="video-container-mobile">
+            <iframe width="660" height="415" src="https://www.youtube.com/embed/D2xmlzMOsmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3>Boy with Luv</h3>
+            <iframe width="660" height="415" src="https://www.youtube.com/embed/x5ZeAfz4G3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3>Fake Love</h3>
+            <iframe width="660" height="415" src="https://www.youtube.com/embed/J8fQMq4T8Yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3>Dynamite</h3>
+        </div>
+
+        <!-- About -->
+        <div id="About-us" class="about">
+            <br>
+            <br>
+            <br>
+            <h1>About</h1>
+        </div>
+        <div class="aboutCards">
+            <div class="cards-container">
+                <div class="col">
+                    <img class="mempic" src="./img/abt_JK.jpg" alt="Jungkook profile picture">
+                    <h3>Jungkook</h3>
+                    <p>Main vocalist of BTS</p>
+                    <a href="https://jungkookglobal.com/" target="_blank">Know More</a>
+                </div>
+                <div class="col">
+                    <img class="mempic" src="./img/abt_JK.jpg" alt="Jungkook profile picture">
+                    <h3>Jungkook</h3>
+                    <p>Main vocalist of BTS</p>
+                    <a href="https://jungkookglobal.com/" target="_blank">Know More</a>
+                </div>
+                <div class="col">
+                    <img class="mempic" src="./img/abt_JK.jpg" alt="Jungkook profile picture">
+                    <h3>Jungkook</h3>
+                    <p>Main vocalist of BTS</p>
+                    <a href="https://jungkookglobal.com/" target="_blank">Know More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact-us" class="contact">
+            <br>
+            <br>
+            <br>
+            <h1>Contact</h1>
+        </div>
+        <!-- Contact Container -->
+        <div class="contact-container">
+            <!-- Image -->
+            <div class="image-container">
+                <img src="./img/contact.jpeg" alt="BTS contact picture">
+            </div>
+            <!-- Form -->
+            <div class="form-container">
+                <form>
+                    <h2>Join Army</h2>
+                    <!-- Name -->
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <!-- Email -->
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+                    <br>
+                    <!-- Gender -->
+                    <lable>Gender</lable>
+                    <div class="gender-container">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">M</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">F</label>
+                        <input type="radio" id="not-tell" name="gender" value="not-tell">
+                        <label for="not-tell">Prefer not to tell</label>
+                    </div>
+                    <br>
+                    <!-- Date of Birth -->
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                    <br>
+                    <!-- Comments -->
+                    <label for="comments">Share anything about BTS!</label>
+                    <textarea id="comments" name="comments" row="4" cols="50"></textarea>
+                    <br>
+                    <!-- Submit -->
+                    <input type="submit" value="Submit">
+                    <br>
+                </form>
+            </div>
+            <!-- Map -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.527087857115!2d114.18443377580383!3d22.33371824168247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404072be78391fd%3A0x873032558975a24f!2sHong%20Kong%20Institute%20of%20Contemporary%20Culture%20Lee%20Shau%20Kee%20School%20of%20Creativity!5e0!3m2!1sen!2shk!4v1685345317825!5m2!1sen!2shk" width="500" height="490" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-left">
+                <p>Created by Carmen Cheung @2023-2024</p>
+            </div>
+            <div class="footer-social">
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/bangtan.official/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"></path>
+                        </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/bts.bighitofficial/?hl=en" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+            <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>
