@@ -8,15 +8,16 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: rgb(35, 25, 66);
 }
 
-/* Cloud animation */
+/* Cloud animation
 body::after {
   content: '';
   position: fixed;
   top: 0;
   left: 0;
-  width: 200%; /* This is now 200% to accommodate two images side by side */
+  width: 200%;
   height: 100%;
   z-index: -1;
   background: url('./img/cloud.png') repeat-x;
@@ -33,6 +34,7 @@ body::after {
       transform: translateX(0);
   }
 }
+*/
 
 /* header */
 header {
