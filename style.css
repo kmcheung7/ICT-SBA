@@ -5,18 +5,45 @@ html {
     margin: 0;
 }
 
-/* header */
+/* Cloud animation */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%; /* This is now 200% to accommodate two images side by side */
+  height: 100%;
+  z-index: -1;
+  background: url('./img/cloud.png') repeat-x;
+  background-size: cover;
+  animation: float 30s linear infinite;
+  filter: opacity(20%);
+}
 
+@keyframes float {
+  0% {
+      transform: translateX(-50%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+/* header */
 header {
+  /* size of Nav Bar */
   width: 100%;
   height: 20px;
+  /* background color of Nav Bar: Dark purple */
   background-color: rgb(35, 25, 66);
   position: fixed;
-  z-index: 1;
+  z-index: 1; /* The Nav Bar always appears at the top, even when scrolling to the bottom of the website. */
+  /* layout rearrangement of Nav Bar */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
+  /* space inside & around the Nav Bar */
   padding-top: 50px;
   padding-bottom: 30px;
   margin-top: -10px;
@@ -52,13 +79,13 @@ header {
 
 .nav a {
   padding-right: 30px;
-  color: rgb(159, 134, 192);
-  text-decoration: none;
+  color: rgb(159, 134, 192); /* display font color: light purple color */
+  text-decoration: none; /* clear the default hyperlink style: ugly blue font color and underline */
 }
 
-.nav a:hover {
-  color: rgb(141,233,235);
-  transition: all 0.3s ease;
+.nav a:hover { /* mouse over effect for call to action purpose */
+  color: rgb(141,233,235); /* light blue font color when mouse-over */ 
+  transition: all 0.3s ease; /* transitional animation when click-on */
 }
 
 @media only screen and (min-device-width: 390px) and (max-device-width: 480px) {
@@ -66,9 +93,8 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 100px;
-      margin-top: -50px;
-      padding-top: 100px;
+      height: 150px;
+      padding-top: 60px;
       background: rgb(35, 25, 66);
   }
 
@@ -76,6 +102,19 @@ header {
       text-align: center;
       font-size: 2.2rem;
       letter-spacing: 0.1px;
+      animation: slideIn 1s forwards;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   .nav {
@@ -138,6 +177,7 @@ header {
 }
 
 /* Banner */
+
 /*
 .banner {
     background: url("./img/banner_1.jpg");
@@ -169,6 +209,7 @@ header {
     margin-top: 0px;
     margin-left: 25px;
 }
+*/
 
 
 /* Photo Slideshow */
@@ -202,7 +243,7 @@ header {
 
 @media only screen and (min-device-width: 390px) and (max-device-width: 480px) {
   .slideshow-container {
-    padding-top: 200px;
+    padding-top: 230px;
   }
 
   .prev, .next {
@@ -243,12 +284,12 @@ header {
 
 @media only screen and (min-device-width: 390px) and (max-device-width: 480px) {
   .MV {
-    padding-top: 500px;
+    padding-top: 100px;
   }
 }
 
 .video-container {
-    display: flex;
+    display: flex; /* for layout rearrangement */
     flex-direction: row;
     align-items: flex-start;
     justify-content: left;
@@ -294,9 +335,9 @@ header {
     border: 3px solid rgb(224, 177, 203);
     cursor: pointer;
   }
-   .video-thumbnails img:hover {
-    border: 3px solid rgb(159, 134, 192);
-    filter: brightness(1.5);
+   .video-thumbnails img:hover { /*hover effect on thumbnails */
+    border: 3px solid rgb(159, 134, 192); /* style the border: line weight, style, RGB color */
+    filter: brightness(1.5); /* adjust the photo's brightness */
   }
 
 /* MV Responsive Styles */
@@ -305,14 +346,14 @@ header {
     display: none;
   }
 
-  .video-container-mobile {
+  .video-container-links {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .video-container-mobile h3 {
+  .video-container-links h3 {
     color: rgb(190, 149, 196);
     text-transform: uppercase;
     font-style: italic;
@@ -321,7 +362,7 @@ header {
 }
 
 @media screen and (min-device-width: 480px) {
-  .video-container-mobile {
+  .video-container-links {
     display: none;
   }
 }
@@ -337,7 +378,7 @@ header {
 
 @media screen and (min-device-width: 390px) and (max-device-width: 480px) {
   .about {
-    padding-top: 500px;
+    padding-top: 50px;
   }
 } 
 
@@ -373,10 +414,10 @@ header {
   letter-spacing: 1.03px;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 8px;
   padding: 10px;
   margin-bottom: 10px;
   /*border: 2px solid rgb(224, 177, 203);*/
-  border-radius: 8px;
  }
 
 .aboutCards a:hover {
@@ -434,7 +475,7 @@ form h2 {
 
 @media screen and (min-device-width: 390px) and (max-device-width: 480px) {
   .contact {
-    margin-top: 10px;
+    padding-top: 100px;
   }
 
   .contact-container {
@@ -600,7 +641,7 @@ input[type="submit"]:hover {
   justify-content: space-around;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .footer-left {
